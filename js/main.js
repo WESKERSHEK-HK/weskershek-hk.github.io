@@ -9,6 +9,7 @@
         bottomTrigger = $(".hero__trigger-button.bottom"),
         closeBottom = $(".close-button.bottom"),
         closeTop = $(".close-button.top"),
+        closeAll = $(".logo-button"),
         mute = $(".mute-action");
 
     // Mobile Detection
@@ -92,6 +93,17 @@
         about.removeClass("idle").addClass("active-screen");
         hero.animate({
             top: 20 + "%"
+        }, 500, function() {
+        });
+
+        return false;
+    });
+
+    closeAll.click(function() {
+        about.addClass("idle").removeClass("active-screen");
+        work.addClass("idle").removeClass("active-screen");
+        hero.animate({
+            top: 0
         }, 500, function() {
         });
 
