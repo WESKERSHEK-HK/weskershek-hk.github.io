@@ -5,6 +5,9 @@
     var hero = $("#hero"),
         work = $("#work"),
         about = $("#about"),
+        art = $("#art"),
+        techTrigger = $(".hero__trigger-button-tech"),
+        artTrigger = $(".hero__trigger-button-art"),
         topTrigger = $(".hero__trigger-button.top"),
         bottomTrigger = $(".hero__trigger-button.bottom"),
         closeBottom = $(".close-button.bottom"),
@@ -89,6 +92,37 @@
 
     /* =Page Transitions
     -------------------------------------------------------------- */
+    techTrigger.click(function() {
+        work.removeClass("idle").addClass("active-screen");
+        hero.animate({
+            top: - 20 + "%"
+        }, 500, function() {
+        });
+
+        return false;
+    });
+
+    artTrigger.click(function() {
+        art.removeClass("idle").addClass("active-screen");
+        hero.animate({
+            top: - 20 + "%"
+        }, 500, function() {
+        });
+
+        return false;
+    });
+
+    closeTop.click(function() {
+        about.addClass("idle").removeClass("active-screen");
+        hero.animate({
+            top: 0
+        }, 500, function() {
+        });
+
+        return false;
+    });
+
+    
     topTrigger.click(function() {
         about.removeClass("idle").addClass("active-screen");
         hero.animate({
@@ -102,6 +136,7 @@
     closeAll.click(function() {
         about.addClass("idle").removeClass("active-screen");
         work.addClass("idle").removeClass("active-screen");
+        art.addClass("idle").removeClass("active-screen");
         hero.animate({
             top: 0
         }, 500, function() {
@@ -132,6 +167,7 @@
 
     closeBottom.click(function() {
         work.addClass("idle").removeClass("active-screen");
+        art.addClass("idle").removeClass("active-screen");
         hero.animate({
             top: 0
         }, 500, function() {

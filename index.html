@@ -43,10 +43,11 @@
 <body>
 	<main role="main">
 		<section id="hero" class="hero dark">
-			<p class="middle__title">TECH / ART</p>
+			<a href="#" class="hero__trigger-button-tech">TECH / </a>
+			<a href="#" class="hero__trigger-button-art">ART</a>
 			<!-- Trigger Buttons -->
 			<a href="#" class="hero__trigger-button top">About</a>
-			<a href="#" class="hero__trigger-button bottom">Work</a>
+			<!--a href="#" class="hero__trigger-button bottom">Work</a-->
 
 			<div class="logo">
 				<p><small>WESKER SHEK</small></p>
@@ -108,6 +109,93 @@
 			</div>
 		</section>
 
+		<section id="art" class="art idle">
+			<div class="work__content">
+				<div class="container">
+					<div class="row initial-position">
+						<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 work__content__box first">
+							<h5>Projects</h5>
+							<ul class="filters">
+								<li data-filter="*" class="is-checked"><span data-hover="all">all</span></li>
+								<li data-filter=".graphic"><span data-hover="graphic">graphic Design</span></li>
+								<li data-filter=".uiux"><span data-hover="UIUX">ui / ux</span></li>
+								<li data-filter=".animation"><span data-hover="anima...">animation</span></li>
+								<li data-filter=".generative"><span data-hover="gennn">genarative</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Ajax Section -->
+					<div class="ajax-section clearfix">
+						<div class="ajax-section__loader"></div>
+						<div class="ajax-section__project-navigation">
+							<ul>
+								<li class="next"><a href="#">next project</a></li>
+								<li class="prev"><a href="#">previous project</a></li>
+							</ul>
+						</div>
+						<div class="ajax-section__project-close">
+							<a href="#">close</a>
+						</div>
+					<div class="ajax-section__content"></div>
+					</div>
+					<!-- End Ajax Section -->
+
+					<div class="row work__content__thumbnails">
+						<div class="col-12 col-md-4 project show animation">
+							<a href="#!projects/DigiRadience" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info"><p>DigiRadience<br><span>Immersive Projection Mapping</span><br><span>2023</span></p></div>
+								</div>
+								<img src="images/projects/DigiRadience/IMG_2359.JPG" alt="thumbnail">
+							</a>
+						</div>
+						<div class="col-12 col-md-4 project show animation">
+							<a href="#!projects/Mnemonic" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info"><p>Mnemonic<br><span>Audio Visual Exhibit</span><br><span>2018</span></p></div>
+								</div>
+								<img src="images/projects/Mnemonic/IMG_20190207_014911_732.jpg" alt="thumbnail">
+							</a>
+						</div>
+						<div class="col-12 col-md-4 project show full_stack">
+							<a href="#!projects/Politician" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info"><p>Politician<br><span>Art Game</span><br><span>2019</span></p></div>
+								</div>
+								<img src="images/projects/Politician/resize/FYP_Logo_01.png" alt="thumbnail">
+							</a>
+						</div>
+						<div class="col-12 col-md-4 project show animation">
+							<a href="#!projects/More_Reverb_Concert_Backdrop" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info"><p>More Reverb - Live Concert Backdrop<br><span>Audio Visual</span><br><span>2018</span></p></div>
+								</div>
+								<img src="images/projects/More_Reverb_Concert_Backdrop/5 coldcave.jpg" alt="thumbnail">
+							</a>
+						</div>
+					</div>
+							<div class="row">
+								<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 work__content__box last">
+									<h5>Want to work with me?</h5>
+									<p>Send me an e-mail over at <a class="underline" href="mailto:weskerwork@gmail.com">weskerwork@gmail.com</a></p>
+								</div>	
+							</div>
+						</div>
+					<div class="logo">
+						<a href="#" class="logo-button"><small>WESKER SHEK</small></a>
+					</div>
+
+					<div class="meta social">
+						<ul>
+							<li><a href="https://github.com/WESKERSHEK-HK"><span data-hover="github">github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/wesker-shek/"><span data-hover="linkedin">linkedin</span></a></li>
+						</ul>
+					</div>
+					<a href="#" class="close-button bottom">Close</a>
+				</div>
+		</section>
+		
 		<section id="work" class="work idle">
 				<div class="work__content">
 					<div class="container">
@@ -173,22 +261,7 @@
 									<img src="images/projects/Fly_with_friends/Screenshot 2023-10-17 at 11.04.46.png" alt="thumbnail">
 								</a>
 							</div>
-							<div class="col-12 col-md-4 project show animation">
-								<a href="#!projects/DigiRadience" class="thumbnail">
-									<div class="overlay">
-										<div class="project-info"><p>DigiRadience<br><span>Immersive Projection Mapping</span><br><span>2023</span></p></div>
-									</div>
-									<img src="images/projects/DigiRadience/IMG_2359.JPG" alt="thumbnail">
-								</a>
-							</div>
-							<div class="col-12 col-md-4 project show animation">
-								<a href="#!projects/Mnemonic" class="thumbnail">
-									<div class="overlay">
-										<div class="project-info"><p>Mnemonic<br><span>Audio Visual Exhibit</span><br><span>2018</span></p></div>
-									</div>
-									<img src="images/projects/Mnemonic/IMG_20190207_014911_732.jpg" alt="thumbnail">
-								</a>
-							</div>
+							
 							<div class="col-12 col-md-4 project show embedded">
 								<a href="#!projects/A_Grandiose_Fanfare" class="thumbnail">
 									<div class="overlay">
@@ -247,14 +320,6 @@
 									<img src="images/projects/Macau_Science_Museum/Landing Page 2 (1) copy.png" alt="thumbnail">
 								</a>
 							</div>
-							<div class="col-12 col-md-4 project show full_stack">
-								<a href="#!projects/Politician" class="thumbnail">
-									<div class="overlay">
-										<div class="project-info"><p>Politician<br><span>Art Game</span><br><span>2019</span></p></div>
-									</div>
-									<img src="images/projects/Politician/resize/FYP_Logo_01.png" alt="thumbnail">
-								</a>
-							</div>
 							
 							<div class="col-12 col-md-4 project show full_stack">
 								<a href="#!projects/Big_Waster_AR" class="thumbnail">
@@ -298,14 +363,7 @@
 								</a>
 							</div>
 							
-							<div class="col-12 col-md-4 project show animation">
-								<a href="#!projects/More_Reverb_Concert_Backdrop" class="thumbnail">
-									<div class="overlay">
-										<div class="project-info"><p>More Reverb - Live Concert Backdrop<br><span>Audio Visual</span><br><span>2018</span></p></div>
-									</div>
-									<img src="images/projects/More_Reverb_Concert_Backdrop/5 coldcave.jpg" alt="thumbnail">
-								</a>
-							</div>
+							
 							<div class="col-12 col-md-4 project show full_stack">
 								<a href="#!projects/Canton_Piano" class="thumbnail">
 									<div class="overlay">
