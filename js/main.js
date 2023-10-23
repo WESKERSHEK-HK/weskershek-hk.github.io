@@ -94,6 +94,7 @@
     -------------------------------------------------------------- */
     techTrigger.click(function() {
         work.removeClass("idle").addClass("active-screen");
+        $(".ajax-section__project-close a").hide();
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
@@ -104,6 +105,7 @@
 
     artTrigger.click(function() {
         art.removeClass("idle").addClass("active-screen");
+        $(".ajax-section__project-close a").hide();
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
@@ -284,9 +286,24 @@
                     $("#work").stop().animate({scrollTop: 280},800,"easeOutExpo", function(){
                         loadProject();
                     });
+                    $("#art").stop().animate({scrollTop: 280},800,"easeOutExpo", function(){
+                        loadProject();
+                    });
                 /* Clicking on portfolio grid or through project navigation */
                 } else if (pageRefresh == false && hash.substr(0,rootLength) == root) {
                     $("#work").stop().animate({scrollTop: 280},800,"easeOutExpo", function(){
+                        if(content == false){
+                            loadProject();
+                        } else {
+                            projectContainer.animate({opacity:0,height:wrapperHeight},function(){
+                                loadProject();
+                            });
+                        }
+
+                        projectNav.fadeOut("100");
+                        exitProject.fadeOut("100");
+                    });
+                    $("#art").stop().animate({scrollTop: 280},800,"easeOutExpo", function(){
                         if(content == false){
                             loadProject();
                         } else {
@@ -304,6 +321,9 @@
                     $("#work").stop().animate({scrollTop: scrollPosition + "px"},1000,function(){
                         deleteProject();
                     });
+                    $("#art").stop().animate({scrollTop: scrollPosition + "px"},1000,function(){
+                        deleteProject();
+                    });
                 }
             }
         });
@@ -314,11 +334,11 @@
 
             if(!ajaxLoading) {
                 ajaxLoading = true;
-
+/*
                 if ($(".work").hasClass("idle")) {
                     $(".work").removeClass("idle").addClass("active-screen");
                 }
-
+*/
                 var projectContainer = $(".ajax-section__content.active-ajax");
 
                 projectContainer.load( url +' section#ajaxpage', function(xhr, statusText, request){
@@ -335,6 +355,11 @@
                               $(".ajaxpage").fitVids();
                               $(".ajaxpage__slider").unslider();
                               hideLoader();
+                            });
+                            $("#art").stop().animate({scrollTop: 280},800,"easeOutExpo", function(){
+                                $(".ajaxpage").fitVids();
+                                $(".ajaxpage__slider").unslider();
+                                hideLoader();
                             });
                         });
                     }
@@ -367,6 +392,7 @@
 
                 projectContainer.animate({opacity:1,height:wrapperHeight}, function(){
                     scrollPosition = $("#work").scrollTop();
+                    scrollPosition = $("#art").scrollTop();
                     projectNav.fadeIn();
                     exitProject.fadeIn();
                     content = true;
@@ -375,6 +401,7 @@
                 wrapperHeight = projectContainer.children("#ajaxpage").outerHeight() + "px";
                 projectContainer.animate({opacity:1,height:wrapperHeight}, function(){
                     scrollPosition = $("#work").scrollTop();
+                    scrollPosition = $("#art").scrollTop();
                     projectNav.fadeIn();
                     exitProject.fadeIn();
                 });
