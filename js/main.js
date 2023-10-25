@@ -94,7 +94,6 @@
     -------------------------------------------------------------- */
     techTrigger.click(function() {
         work.removeClass("idle").addClass("active-screen");
-        $(".ajax-section__project-close a").hide();
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
@@ -105,7 +104,6 @@
 
     artTrigger.click(function() {
         art.removeClass("idle").addClass("active-screen");
-        $(".ajax-section__project-close a").hide();
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
