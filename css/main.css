@@ -466,6 +466,8 @@ main {
   .hero__trigger-button-art:hover {
     opacity: 1;
     top: 43%;
+    color: #ffffff;
+    background: #7c626c;
   }
   @media only screen and (max-width: 600px) {
     .hero__trigger-button-tech{
