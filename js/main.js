@@ -435,6 +435,7 @@
             projectContainer.animate({opacity:0,height:"0px"},800,"easeOutExpo");
             projectContainer.empty();
             $("#work").stop().animate({scrollTop: scrollHelper + "px"},600);
+            $("#art").stop().animate({scrollTop: scrollHelper + "px"},600);
 
             $(".work__content").find(".work__content__thumbnails.active-folio").removeClass("active-folio");
             $(".work__content").find(".ajax-section__content.active-ajax, .ajax-section__project-navigation.active-ajax, .ajax-section__project-close.active-ajax, .ajax-section__loader.active-ajax").removeClass("active-ajax");

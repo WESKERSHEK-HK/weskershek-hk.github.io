@@ -207,7 +207,7 @@ h5 {
       font-size: 0.875rem; } }
   @media (min-width: 992px) {
     h5 {
-      font-size: 0.875rem; } }
+      font-size: 1.2rem; } }
 
 h6 {
   font-size: 0.625rem; }
@@ -1112,7 +1112,7 @@ main {
             color: #979797;
             display: inline-block;
             overflow: hidden;
-            font-size: 0.75rem;
+            font-size: 1rem;
             vertical-align: middle; }
             .work__content__box .filters li span {
               position: relative;
@@ -1123,7 +1123,7 @@ main {
                 top: 200%;
                 content: attr(data-hover);
                 transform: translate3d(0, 0, 0);
-                font-size: 0.75rem;
+                font-size: 1rem;
                 color: #353535; }
             .work__content__box .filters li:hover, .work__content__box .filters li:focus, .work__content__box .filters li.is-checked {
               opacity: 1; }
