@@ -140,6 +140,12 @@
         hero.animate({
             top: 0
         }, 500, function() {
+            $(".work__content__thumbnails").fadeTo(100, 0);
+            $(".project").fadeOut().removeClass('show');
+            setTimeout(function() {
+              $(".project").fadeIn().addClass('show');
+              $(".work__content__thumbnails").fadeTo(300, 1);
+            }, 300);
         });
 
         return false;
@@ -171,6 +177,12 @@
         hero.animate({
             top: 0
         }, 500, function() {
+            $(".work__content__thumbnails").fadeTo(100, 0);
+            $(".project").fadeOut().removeClass('show');
+            setTimeout(function() {
+              $(".project").fadeIn().addClass('show');
+              $(".work__content__thumbnails").fadeTo(300, 1);
+            }, 300);
         });
 
         return false;
@@ -481,6 +493,30 @@
         });
 
         $(".ajax-section__project-close a").on("click",function (e) {
+
+            var loader = $(".ajax-section__loader.active-ajax"); 
+                                
+            deleteProject($(this).attr("href"));
+            
+            portfolioGrid.find(".project.current").children().removeClass("active");
+            loader.fadeOut();
+
+            return false;
+        });
+
+        $(".logo-button").on("click",function (e) {
+
+            var loader = $(".ajax-section__loader.active-ajax"); 
+                                
+            deleteProject($(this).attr("href"));
+            
+            portfolioGrid.find(".project.current").children().removeClass("active");
+            loader.fadeOut();
+
+            return false;
+        });
+
+        $(".close-button.bottom").on("click",function (e) {
 
             var loader = $(".ajax-section__loader.active-ajax"); 
                                 
