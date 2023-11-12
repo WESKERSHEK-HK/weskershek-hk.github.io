@@ -526,6 +526,69 @@ main {
   .hero.dark .meta.sound a {
     background-image: url("../images/icon-sound-light.png"); }
 
+
+    .timeline {
+      position: relative;
+      padding: 80px 0;
+      margin: 0 auto; /* Center the timeline horizontally */
+      max-width: 800px; /* Adjust the maximum width as needed */
+      margin-bottom: 50px;
+    }
+
+    .timeline:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background: #ccc;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    .timeline-item:before,
+    .timeline-item:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .timeline-item .timeline-content {
+      width: 35%; 
+      margin: 0 auto;
+      padding: 20px;
+      background: #f7f7f7;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+      float: right; 
+      margin-right: 50%;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+      float: left; 
+      margin-left: 50.3%;
+    }
+
+    .timeline-item .year {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item .description {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
 .about {
   position: absolute;
   z-index: 2;
@@ -558,6 +621,7 @@ main {
       .about.active-screen .close-button:hover {
         opacity: 1;
         bottom: 1.875rem; }
+        
   .about__content {
     position: relative;
     width: 100%; }
