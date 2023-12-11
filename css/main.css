@@ -439,37 +439,37 @@ main {
     opacity: .5; }
   .hero__trigger-button-tech{
     font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 2.875rem;
+    font-size: 1.2rem;
     position: absolute;
     z-index: 2;
-    left: 50%;
-    top: 45%;
+    left: 40%;
+    top: 5%;
     opacity: 0.7;
     margin-left: -150px; 
     color: #000000;
-    background: #FBFFFF;
+    background: #d4d6d6;
   }
   .hero__trigger-button-tech:hover {
     opacity: 1;
-    top: 43%;
+    top: 3%;
     color: #ffffff;
-    background: #627c7c;
+    background: #62627c;
   }
   .hero__trigger-button-art{
     font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 2.875rem;
+    font-size: 1.2rem;
     position: absolute;
     z-index: 2;
-    left: 50%;
-    top: 45%;
+    left: 51%;
+    top: 5%;
     opacity: 0.7;
-    margin-left: 20px; 
+    margin-left: -150px; 
     color: #000000;
-    background: #FBFFFF;
+    background: #d4d6d6;
   }
   .hero__trigger-button-art:hover {
     opacity: 1;
-    top: 43%;
+    top: 3%;
     color: #ffffff;
     background: #7c626c;
   }
@@ -488,17 +488,18 @@ main {
     font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 1.2rem;
     position: absolute;
-    z-index: 2;
-    left: 50%;
-    margin-left: -30px; }
+    z-index: 2;}
     .hero__trigger-button.top {
-      color: #514e4e;
-      background: #7c626c38;
-      top: 50px;
-      transform: rotate(270deg); }
+      left: 35%;
+      top: 5%;
+      opacity: 0.7;
+      margin-left: -150px; 
+      color: #000000;
+      background: #d4d6d6;}
       .hero__trigger-button.top:hover {
         opacity: 1;
-        top: 35px; }
+        top: 3%;
+        background: #8ca6a6; }
     .hero__trigger-button.bottom {
       bottom: 40px;
       transform: rotate(270deg); }
