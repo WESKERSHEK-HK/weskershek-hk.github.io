@@ -191,6 +191,27 @@
     /* =Portfolio Filtering
     -------------------------------------------------------------- */
     var selectedClass;
+    $(".logo-button").click(function() {
+        $(this).addClass("is-checked");
+        $(this).siblings().removeClass("is-checked");
+
+        if ($(this).attr("data-filter") === "*") {
+            $(".work__content__thumbnails").fadeTo(100, 0);
+            $(".project").fadeOut().removeClass('show');
+            setTimeout(function() {
+              $(".project").fadeIn().addClass('show');
+              $(".work__content__thumbnails").fadeTo(300, 1);
+            }, 300);
+        } else {
+            selectedClass = $(this).attr("data-filter");
+            $(".work__content__thumbnails").fadeTo(100, 0);
+            $(".project").fadeOut().removeClass('show');
+            setTimeout(function() {
+              $(selectedClass).fadeIn().addClass('show');
+              $(".work__content__thumbnails").fadeTo(300, 1);
+            }, 300);
+        }
+    });
 
     $(".filters li").click(function() {
         $(this).addClass("is-checked");
