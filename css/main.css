@@ -72,7 +72,7 @@
   clear: both; }
 
 .landing{
-  background-color: #4b4646000;
+  background-color: white;
 }
 
 body.project-single .ajaxpage {
@@ -106,7 +106,7 @@ body.project-single .ajaxpage {
   box-sizing: border-box; }
 
 body {
-  background: white;
+  background: black;
   font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
   color: #353535;
