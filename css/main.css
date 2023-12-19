@@ -109,7 +109,7 @@ body {
   background: black;
   font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
-  color: #353535;
+  color: #c2c2c2;
   font-size: 1.125rem;
   font-style: normal;
   line-height: 1.45;
@@ -125,7 +125,7 @@ body {
 
 a,
 a:active {
-  color: #353535;
+  color: #ffffff;
   text-decoration: none;
   transition: all .3s ease-in-out; }
 
@@ -147,12 +147,18 @@ a:focus {
 
 .underline {
   padding: 0.625rem 0;
+  color: #353535;
   background-image: linear-gradient(currentColor, currentColor);
   background-repeat: no-repeat;
   background-size: 100% 0.09375rem;
   background-position: center bottom 29%;
   background-origin: padding-box;
   text-shadow: 0.1875rem 0 #fff, 0.125rem 0 #fff, 0.0625rem 0 #fff, -0.0625rem 0 #fff, -0.125rem 0 #fff, -0.1875rem 0 #fff; }
+.underline:hover{
+  color: #ffffff;
+  background-color: black;
+  text-shadow: 0.1875rem 0 #000000, 0.125rem 0 #000000, 0.0625rem 0 #000000, -0.0625rem 0 #000000, -0.125rem 0 #000000, -0.1875rem 0 #000000; 
+}
 
 h1, h2, h3, h4, h5, h6{
   font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
@@ -415,6 +421,7 @@ main {
   z-index: 1;
   overflow: hidden;
   width: 100%;
+  color: #353535;
   background-image: radial-gradient(50% 100%, #e6e6e6 50%, #d6d6d6 100%); }
   .hero__content {
     width: 100%;
@@ -437,68 +444,58 @@ main {
     left: 50%;
     transform: translateX(-50%);
     opacity: .5; }
-  .hero__trigger-button-tech{
-    font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 1.2rem;
-    position: absolute;
-    z-index: 2;
-    left: 57%;
-    top: 5%;
-    opacity: 0.7;
-    margin-left: -150px; 
-    color: #000000;
-    background: #d4d6d6;
-  }
-  .hero__trigger-button-tech:hover {
-    opacity: 1;
-    top: 3%;
-    color: #ffffff;
-    background: #62627c;
-  }
-  .hero__trigger-button-art{
-    font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 1.2rem;
-    position: absolute;
-    z-index: 2;
-    left: 42%;
-    top: 5%;
-    opacity: 0.7;
-    margin-left: -150px; 
-    color: #000000;
-    background: #d4d6d6;
-  }
-  .hero__trigger-button-art:hover {
-    opacity: 1;
-    top: 3%;
-    color: #ffffff;
-    background: #7c626c;
-  }
-  @media only screen and (max-width: 600px) {
-    .hero__trigger-button-tech{
-      font-size:5.5rem;
-      left: 40%;
-    }
-    .hero__trigger-button-art{
-      font-size:5.5rem;
-      left: 55%;
-    }
-  }
+
   
   .hero__trigger-button {
     font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 1.2rem;
     position: absolute;
     z-index: 2;}
+    .hero__trigger-button-tech {
+      font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
+      font-size: 1.2rem;
+      position: absolute;
+      z-index: 2;
+      left: 84%;
+      top: 50%;
+      opacity: 0.7;
+      margin-left: -30px; 
+      color: #ffffff;
+    }
+    .hero__trigger-button-tech:hover {
+      opacity: 1;
+      top: 48%;
+      color: #ffffff;
+      background: #62627c;
+    }
+    .hero__trigger-button-art {
+      font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
+      font-size: 1.2rem;
+      position: absolute;
+      z-index: 2;
+      left: 5%;
+      top: 50%;
+      opacity: 0.7;
+      margin-left: -30px; 
+      color: #ffffff;
+    }
+    .hero__trigger-button-art:hover {
+      opacity: 1;
+      top: 48%;
+      color: #ffffff;
+      background: #7c626c;
+    }
     .hero__trigger-button.top {
-      left: 35%;
+      left: 50%;
       top: 5%;
       opacity: 0.7;
-      margin-left: -150px; 
-      color: #000000;
-      background: #d4d6d6;}
+      margin-left: -40px; 
+      color: #e1e1e1;
+     }
       .hero__trigger-button.top:hover {
         opacity: 1;
         top: 3%;
+        color: #ffffff;
         background: #8ca6a6; }
     .hero__trigger-button.bottom {
       bottom: 40px;
@@ -601,6 +598,7 @@ main {
   z-index: 2;
   width: 100%;
   height: 100%;
+  color: #353535;
   background: #fff;
   overflow-y: scroll; }
   .about.idle {
@@ -760,6 +758,7 @@ main {
   z-index: 3;
   width: 100%;
   height: 100%;
+  color: #353535;
   background: white;
   overflow-y: scroll;
   overflow-x: hidden; }
@@ -1129,6 +1128,7 @@ main {
     z-index: 3;
     width: 100%;
     height: 100%;
+    color: #353535;
     background: white;
     overflow-y: scroll;
     overflow-x: hidden; }
