@@ -623,7 +623,8 @@ main {
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
     .about.active-screen .close-button {
       opacity: 1;
-      bottom: 2.5rem; }
+      bottom: 2.5rem; 
+      color: #000000;}
       .about.active-screen .close-button:hover {
         opacity: 1;
         bottom: 1.875rem; }
