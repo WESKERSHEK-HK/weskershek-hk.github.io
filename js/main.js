@@ -6,6 +6,8 @@
         work = $("#work"),
         about = $("#about"),
         art = $("#art"),
+        navTrigger = $(".hamburger-line"),
+        navigationMenu = document.querySelector('.navigation-menu'),
         techTrigger = $(".hero__trigger-button-tech"),
         artTrigger = $(".hero__trigger-button-art"),
         topTrigger = $(".hero__trigger-button.top"),
@@ -92,8 +94,19 @@
 
     /* =Page Transitions
     -------------------------------------------------------------- */
+
+    navTrigger.click(function() {
+        console.log('The span element was clicked!');
+        if (navigationMenu.style.display === "block") {
+            navigationMenu.style.display = "none";
+        } else {
+            navigationMenu.style.display = 'block';
+        }
+    });
+
     techTrigger.click(function() {
         work.removeClass("idle").addClass("active-screen");
+        navigationMenu.style.display = "none";
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
@@ -104,6 +117,7 @@
 
     artTrigger.click(function() {
         art.removeClass("idle").addClass("active-screen");
+        navigationMenu.style.display = "none";
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
@@ -125,6 +139,7 @@
     
     topTrigger.click(function() {
         about.removeClass("idle").addClass("active-screen");
+        navigationMenu.style.display = "none";
         hero.animate({
             top: 20 + "%"
         }, 500, function() {
