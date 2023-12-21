@@ -703,6 +703,9 @@ main {
     -ms-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+    .about.active-screen .logo{
+      color: #000000;
+    }
     .about.active-screen .close-button {
       opacity: 1;
       bottom: 2.5rem; 
@@ -865,9 +868,13 @@ main {
     -ms-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
     transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+    .work.active-screen .logo{
+      color: #000000;
+    }
     .work.active-screen .close-button {
       opacity: 1;
-      bottom: 2.5rem; }
+      bottom: 2.5rem; 
+      color: #000000;}
       .work.active-screen .close-button:hover {
         opacity: 1;
         bottom: 2.1875rem; }
@@ -1235,9 +1242,13 @@ main {
       -ms-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
       -o-transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5);
       transition: top 0.5s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+      .art.active-screen .logo{
+        color: #000000;
+      }
       .art.active-screen .close-button {
         opacity: 1;
-        bottom: 2.5rem; }
+        bottom: 2.5rem; 
+        color: #000000;}
         .art.active-screen .close-button:hover {
           opacity: 1;
           bottom: 2.1875rem; }
