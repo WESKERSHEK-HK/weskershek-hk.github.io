@@ -448,50 +448,52 @@ main {
   
   .hero__trigger-button {
     font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     z-index: 2;}
     .hero__trigger-button-tech {
       font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1rem;
       position: absolute;
       z-index: 2;
-      left: 85%;
-      top: 50%;
+      left:85%;
+      top: 6%;
       opacity: 0.7;
       margin-left: -30px; 
       color: #ffffff;
+      background: #303035;
     }
     .hero__trigger-button-tech:hover {
       opacity: 1;
-      top: 48%;
+      top: 5%;
       color: #ffffff;
       background: #62627c;
     }
     .hero__trigger-button-art {
       font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1rem;
       position: absolute;
       z-index: 2;
-      left: 5%;
-      top: 50%;
+      left: 73%;
+      top: 6%;
       opacity: 0.7;
       margin-left: -30px; 
       color: #ffffff;
+      background: #303035;
     }
     .hero__trigger-button-art:hover {
       opacity: 1;
-      top: 48%;
+      top: 5%;
       color: #ffffff;
       background: #7c626c;
     }
     .hero__trigger-button.top {
-      left: 50%;
+      left: 67%;
       top: 6%;
       opacity: 0.7;
       margin-left: -40px; 
       color: #e1e1e1;
-      transform: rotate(270deg);
+      background: #303035;
      }
       .hero__trigger-button.top:hover {
         opacity: 1;
