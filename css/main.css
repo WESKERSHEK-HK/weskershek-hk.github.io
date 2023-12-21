@@ -221,7 +221,8 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 400;
   font-style: normal;
   margin: 1rem 0;
-  letter-spacing: 0.07em; }
+  letter-spacing: 0.07em; 
+  color: #000000;}
 
 h1 {
   font-size: 2.25rem;
@@ -264,7 +265,7 @@ h4 {
 
 h5 {
   font-family: "Karla", "Helvetica Neue", "Helvetica", sans-serif;
-  color: #979797;
+  color: #616161;
   font-size: 0.8125rem;
   letter-spacing: 0; }
   @media (min-width: 768px) {
