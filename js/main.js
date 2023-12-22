@@ -27,7 +27,7 @@
     $("body").queryLoader2({
         // Loader background color
         backgroundColor: "#fff",
-        fadeOutTime: 500
+        fadeOutTime: 1500
     });
 
     /* =Hero
