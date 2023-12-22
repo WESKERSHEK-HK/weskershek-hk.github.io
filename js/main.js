@@ -15,7 +15,8 @@
         closeBottom = $(".close-button.bottom"),
         closeTop = $(".close-button.top"),
         closeAll = $(".logo-button"),
-        mute = $(".mute-action");
+        mute = $(".mute-action"),
+        sections = document.querySelectorAll("#about, #art, #work");
 
     // Mobile Detection
     function isMobile() {
@@ -96,17 +97,25 @@
     -------------------------------------------------------------- */
 
     navTrigger.click(function() {
-        console.log('The span element was clicked!');
         if (navigationMenu.style.display === "block") {
             navigationMenu.style.display = "none";
+            sections.forEach(function(section) {
+                section.classList.remove("blur-effect");
+            });
         } else {
             navigationMenu.style.display = 'block';
+            sections.forEach(function(section) {
+                section.classList.add("blur-effect");
+            });
         }
     });
 
     techTrigger.click(function() {
         work.removeClass("idle").addClass("active-screen");
         navigationMenu.style.display = "none";
+        sections.forEach(function(section) {
+            section.classList.remove("blur-effect");
+        });
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
@@ -118,6 +127,9 @@
     artTrigger.click(function() {
         art.removeClass("idle").addClass("active-screen");
         navigationMenu.style.display = "none";
+        sections.forEach(function(section) {
+            section.classList.remove("blur-effect");
+        });
         hero.animate({
             top: - 20 + "%"
         }, 500, function() {
@@ -140,6 +152,9 @@
     topTrigger.click(function() {
         about.removeClass("idle").addClass("active-screen");
         navigationMenu.style.display = "none";
+        sections.forEach(function(section) {
+            section.classList.remove("blur-effect");
+        });
         hero.animate({
             top: 20 + "%"
         }, 500, function() {
@@ -152,6 +167,10 @@
         about.addClass("idle").removeClass("active-screen");
         work.addClass("idle").removeClass("active-screen");
         art.addClass("idle").removeClass("active-screen");
+        navigationMenu.style.display = "none";
+        sections.forEach(function(section) {
+            section.classList.remove("blur-effect");
+        });
         hero.animate({
             top: 0
         }, 500, function() {

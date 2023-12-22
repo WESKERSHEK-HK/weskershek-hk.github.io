@@ -30,7 +30,8 @@
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #979797;
+  background-color: #0000008b;
+  mix-blend-mode: difference;
   margin-bottom: 5px;
 }
 
@@ -38,17 +39,32 @@
   margin-bottom: 0;
 }
 
+.blur-effect {
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+}
 
 /* Navigation Menu Styles */
 .navigation-menu {
   display: none;
   position: fixed;
-  top: 0;
+  top: -20px;
   right: 0;
-  height: 100vh;
+  height: 40vh;
   width: 100vw;
-  background-color: #ffffffba;
+  background-color: #e4e4e4d4;
   z-index: 999;
+}
+
+.navigation-line {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 1.5px;
+  top: 6rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  margin-bottom: 5px;
 }
 
 
@@ -413,7 +429,8 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden; 
+  color: #000000;}
   main .logo {
     position: absolute;
     top: 2.5rem;
@@ -524,8 +541,7 @@ main {
       top: 6%;
       opacity: 0.7;
       margin-left: -30px; 
-      color: #ffffff;
-      background: #303035;
+      color: #000000;
     }
     .hero__trigger-button-tech:hover {
       opacity: 1;
@@ -542,8 +558,7 @@ main {
       top: 6%;
       opacity: 0.7;
       margin-left: -30px; 
-      color: #ffffff;
-      background: #303035;
+      color: #000000;
     }
     .hero__trigger-button-art:hover {
       opacity: 1;
@@ -556,27 +571,32 @@ main {
       top: 6%;
       opacity: 0.7;
       margin-left: -40px; 
-      color: #e1e1e1;
-      background: #303035;
+      color: #000000;
      }
      @media (max-width: 767px){
       .hero__trigger-button.top {
         font-size: 1.25rem;
-        top: 5.5rem;
-        left: 85%;
-        text-align: center;
+        top: 8.5rem;
+        align-items: center;
+        justify-content: center;
       }
       .hero__trigger-button-art {
         font-size: 1.25rem;
-        top: 8.5rem;
-        left: 55%;
+        top: 11.5rem;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+        margin-right: 30px;
+        color: #000000;
       }
       .hero__trigger-button-tech {
         font-size: 1.25rem;
-        top: 11.5rem;
-        left: 45%;
+        top: 14.5rem;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+        margin-right: 60px;
+        color: #000000;
       }
      }
       .hero__trigger-button.top:hover {
