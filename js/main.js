@@ -112,6 +112,8 @@
 
     techTrigger.click(function() {
         work.removeClass("idle").addClass("active-screen");
+        about.removeClass("idle").addClass("active-screen");
+        art.addClass("idle").removeClass("active-screen");
         navigationMenu.style.display = "none";
         sections.forEach(function(section) {
             section.classList.remove("blur-effect");
@@ -126,6 +128,8 @@
 
     artTrigger.click(function() {
         art.removeClass("idle").addClass("active-screen");
+        about.removeClass("idle").addClass("active-screen");
+        work.addClass("idle").removeClass("active-screen");
         navigationMenu.style.display = "none";
         sections.forEach(function(section) {
             section.classList.remove("blur-effect");
@@ -151,6 +155,8 @@
     
     topTrigger.click(function() {
         about.removeClass("idle").addClass("active-screen");
+        work.addClass("idle").removeClass("active-screen");
+        art.addClass("idle").removeClass("active-screen");
         navigationMenu.style.display = "none";
         sections.forEach(function(section) {
             section.classList.remove("blur-effect");
