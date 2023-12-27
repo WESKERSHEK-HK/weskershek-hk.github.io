@@ -431,10 +431,6 @@ main .close-button {
   background: #979797 !important;
   height: 1px !important; }
 
-.logo-button{
-  color: #000000;
-}
-
 main {
   position: absolute;
   width: 100%;
@@ -443,8 +439,12 @@ main {
   color: #000000;}
   main .logo {
     position: absolute;
-    top: 2.5rem;
-    left: 1.25rem;
+    font-size: 1.5rem;
+    top: 3%;
+    text-align: left;
+    margin-left: -25px;
+    padding: 10px 20px;
+    border-radius: 5px;
     z-index: 999; }
     @media (min-width: 768px) {
       main .logo {
@@ -456,6 +456,13 @@ main {
           main .logo {
             font-size: 1.25rem;} 
         }
+  main .logo:hover{
+    background-color: #fafafa4a;
+  }
+  .logo-button{
+    color: #000000;
+    cursor: none;
+  }
   main .meta {
     position: absolute;
     z-index: 10; }
@@ -567,7 +574,8 @@ main {
       opacity: 1;
       transform: translateY(-3%);
       color: #ffffff;
-      background: #62627c;
+      background-color: #0000004a;
+      cursor: none;
     }
    
      @media (max-width: 767px){
