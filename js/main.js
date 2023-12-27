@@ -112,7 +112,7 @@
 
     techTrigger.click(function() {
         work.removeClass("idle").addClass("active-screen");
-        about.removeClass("idle").addClass("active-screen");
+        about.addClass("idle").removeClass("active-screen");
         art.addClass("idle").removeClass("active-screen");
         navigationMenu.style.display = "none";
         sections.forEach(function(section) {
@@ -128,7 +128,7 @@
 
     artTrigger.click(function() {
         art.removeClass("idle").addClass("active-screen");
-        about.removeClass("idle").addClass("active-screen");
+        about.addClass("idle").removeClass("active-screen");
         work.addClass("idle").removeClass("active-screen");
         navigationMenu.style.display = "none";
         sections.forEach(function(section) {
