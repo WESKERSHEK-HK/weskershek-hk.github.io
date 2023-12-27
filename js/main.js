@@ -592,6 +592,19 @@
         pageRefresh = false;
     }
 
+    function refreshPage() {
+        // Check if the page has already been refreshed
+        if (!sessionStorage.getItem('refreshed')) {
+          sessionStorage.setItem('refreshed', 'true');
+          setTimeout(function() {
+            location.reload();
+          }, 500); // Adjust the delay time (in milliseconds) as needed
+        }
+      }
+    
+      // Call the refreshPage function when the page has finished loading
+      window.addEventListener('load', refreshPage);
+
     initializePortfolio();
     $(window).trigger( "hashchange" );
 })();
