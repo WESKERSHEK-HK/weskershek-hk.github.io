@@ -46,25 +46,15 @@
 /* Navigation Menu Styles */
 .navigation-menu {
   display: none;
-  position: fixed;
+  position: absolute;
   top: -20px;
-  right: 0;
+  text-align: center;
+  align-items: center;
+  align-content: center;
   height: 40vh;
   width: 100vw;
   background-color: #e4e4e4d4;
   z-index: 999;
-}
-
-.navigation-line {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 1.5px;
-  top: 6rem;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
-  margin-bottom: 5px;
 }
 
 .copyright {
@@ -75,6 +65,11 @@
   width: 100vw;
   bottom: 3%;
   z-index: 2;
+}
+@media (max-width: 767px){
+  .copyright {
+    font-size: 1rem;
+  }
 }
   
 
@@ -457,7 +452,9 @@ main {
         left: 2.5rem; } }
         @media only screen and (max-width: 600px) {
           main .logo {
-            font-size: 1.25rem;} 
+            font-size: 1.5rem;
+            margin-left: 10px;
+            top: 2.3rem;} 
         }
   main .logo:hover{
     background-color: #fafafa4a;
@@ -552,25 +549,32 @@ main {
     font-size: 1rem;
     position: absolute;
     text-align: center;
-    top: 5%;
-    right: 0;
-    padding: 5px 10px;
-    border-radius: 10px;
-    z-index: 2;
-    color: #000000;
-    opacity: 0.7;
-    transition: top 0.3s ease-in-out;}
+  }
+
+  @media (min-width: 768px) {
+    .hero__trigger-button-art,
+    .hero__trigger-button-tech,
     .hero__trigger-button {
-      margin-right: 430px;
-    }
+      top: 5%;
+      right: 0;
+      padding: 5px 10px;
+      border-radius: 10px;
+      z-index: 2;
+      color: #000000;
+      opacity: 0.7;
+      transition: top 0.3s ease-in-out;}
+      .hero__trigger-button {
+        margin-right: 430px;
+      }
 
-    .hero__trigger-button-art {
-      margin-right: 240px;
-    }
+      .hero__trigger-button-art {
+        margin-right: 240px;
+      }
 
-    .hero__trigger-button-tech {
-      margin-right: 20px;
-    }
+      .hero__trigger-button-tech {
+        margin-right: 20px;
+      }
+  }
     .hero__trigger-button-art:hover,
     .hero__trigger-button-tech:hover,
     .hero__trigger-button:hover {
@@ -580,50 +584,27 @@ main {
       background-color: #0000004a;
     }
    
-     @media (max-width: 767px){
-      .hero__trigger-button.top {
-        font-size: 1.25rem;
-        top: 8.5rem;
-        align-items: center;
-        justify-content: center;
-      }
-      .hero__trigger-button-art {
-        font-size: 1.25rem;
-        top: 11.5rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-right: 30px;
+    @media (max-width: 767px){
+      .hero__trigger-button-art,
+      .hero__trigger-button-tech,
+      .hero__trigger-button {
+        left: 25%;
         color: #000000;
       }
-      .hero__trigger-button-tech {
-        font-size: 1.25rem;
-        top: 14.5rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-right: 60px;
-        color: #000000;
+      .hero__trigger-button{
+        top: 45%;
       }
-     }
+      .hero__trigger-button-art{
+        top: 55%;
+      }
+      .hero__trigger-button-tech{
+        top: 65%;
+      }
+    }
    
-    .hero__trigger-button.bottom {
-      bottom: 40px;
-      transform: rotate(270deg); }
-      .hero__trigger-button.bottom:hover {
-        opacity: 1;
-        bottom: 35px; }
   .hero.sphere, .hero.field {
     background: #FBFFFF; }
 
-    @media only screen and (max-width: 600px) {
-      .hero__trigger-button {
-        font-size: 2.2rem;
-        left: 48%;
-        top: 40%;
-        transform: rotate(0deg);
-      }
-    }
 
 .hero.dark {
   background-image: radial-gradient(50% 100%, #080808 50%, #14161B 100%); }
