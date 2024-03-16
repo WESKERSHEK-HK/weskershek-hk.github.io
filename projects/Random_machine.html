@@ -3,9 +3,52 @@
 <head>
   <title>猜猜畫畫</title>
   <style>
+    body {
+      background-color: #9cb5c6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
     .container {
       text-align: center;
       margin-top: 100px;
+    }
+    h1 {
+    color: #583939;
+    font-size: 48px;
+    line-height: 1.2;
+    }
+
+    p {
+    font-size: 32px;
+    color: #4f3737;
+    margin-bottom: 24px;
+    }
+
+    button {
+    background-color: #4CAF50;
+    color: rgb(120, 82, 82);
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+    background-color: #45a049;
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 767px) {
+        .container {
+        margin-top: 500px;
+        }
     }
   </style>
 </head>
@@ -78,7 +121,22 @@
     "蜘蛛俠",
     "黑魔后",
     "獅子王",
-    "一錘定音", "心有餘悸", "見微知著", "尋章摘句", "力不從心", "順理成章", "劍拔弩張", "欲擒故縱", "懷璧其罪", "舉案齊眉", "風花雪月", "深思熟慮", "大喜過望", "自由自在", "東山再起", "明哲保身", "心明眼亮", "順手牽羊", "鳥語花香", "海闊天空", "青出於藍", "情不自禁", "名落孫山", "忍辱負重", "無懈可擊", "見義勇為", "一氣呵成", "高山流水", "追本溯源", "獨步天下", "開門見山", "步步為營", "遠水救不了近火", "輕而易舉", "一網打盡", "千篇一律", "跋山涉水", "無所適從", "沉魚落雁", "一鳴驚人", "四海為家", "安居樂業", "破釜沉舟", "目瞪口呆", "事半功倍", "假公濟私", "無辜受難", "刻苦耐勞", "三思而後行", "熟能生巧", "心平氣和"
+    "一錘定音", 
+    "心有餘悸", 
+    "見微知著", 
+    "尋章摘句", 
+    "力不從心",
+    "順理成章", 
+    "劍拔弩張", 
+    "欲擒故縱", 
+    "懷璧其罪", 
+    "舉案齊眉", 
+    "風花雪月", 
+    "深思熟慮", 
+    "大喜過望", 
+    "自由自在", 
+    "東山再起", 
+    "明哲保身", "心明眼亮", "順手牽羊", "鳥語花香", "海闊天空", "青出於藍", "情不自禁", "名落孫山", "忍辱負重", "無懈可擊", "見義勇為", "一氣呵成", "高山流水", "追本溯源", "獨步天下", "開門見山", "步步為營", "遠水救不了近火", "輕而易舉", "一網打盡", "千篇一律", "跋山涉水", "無所適從", "沉魚落雁", "一鳴驚人", "四海為家", "安居樂業", "破釜沉舟", "目瞪口呆", "事半功倍", "假公濟私", "無辜受難", "刻苦耐勞", "三思而後行", "熟能生巧", "心平氣和"
     ];
 
     function generateRandomWord() {
