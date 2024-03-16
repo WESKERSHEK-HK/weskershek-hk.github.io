@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>猜猜畫畫</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>猜猜畫畫</h1>
+    <p id="randomWord"></p>
+    <button onclick="generateRandomWord()">Generate</button>
+  </div>
+
+  <script>
+    // Array of words
+    var words = [
+    "遠足",
+    "逛街", 
+    "睇電影", 
+    "飲茶", 
+    "籃球", 
+    "游泳", 
+    "烹飪", 
+    "跑步", 
+    "健身", 
+    "瑜珈", 
+    "睇展覽", 
+    "拍攝照片", 
+    "音樂會", 
+    "食韓燒", 
+    "睇舞台劇", 
+    "玩桌遊", 
+    "睇電視劇", 
+    "海灘", 
+    "聚餐", 
+    "唱卡拉OK", 
+    "夜市", 
+    "動物園", 
+    "踩單車", 
+    "世界盃", 
+    "派對", 
+    "桌球", 
+    "電子遊戲", 
+    "羽毛球", 
+    "公園散步", 
+    "寫作", 
+    "閱讀", 
+    "煙花表演", 
+    "按摩", 
+    "繪畫",
+    "品酒", 
+    "賞花",
+    "阿凡達",
+    "星球大戰",
+    "魔戒",
+    "復仇者聯盟",
+    "哈利波特",
+    "鋼鐵人",
+    "蝙蝠俠",
+    "加勒比海盜",
+    "變形金剛",
+    "玩具總動員",
+    "海底奇兵",
+    "旺卡",
+    "查理與朱古力工廠",
+    "沙丘",
+    "多啦A夢",
+    "千與千尋",
+    "光之美少女",
+    "魔界女王後補生",
+    "足球小將",
+    "芭比",
+    "蜘蛛俠",
+    "黑魔后",
+    "獅子王",
+    "一錘定音", "心有餘悸", "見微知著", "尋章摘句", "力不從心", "順理成章", "劍拔弩張", "欲擒故縱", "懷璧其罪", "舉案齊眉", "風花雪月", "深思熟慮", "大喜過望", "自由自在", "東山再起", "明哲保身", "心明眼亮", "順手牽羊", "鳥語花香", "海闊天空", "青出於藍", "情不自禁", "名落孫山", "忍辱負重", "無懈可擊", "見義勇為", "一氣呵成", "高山流水", "追本溯源", "獨步天下", "開門見山", "步步為營", "遠水救不了近火", "輕而易舉", "一網打盡", "千篇一律", "跋山涉水", "無所適從", "沉魚落雁", "一鳴驚人", "四海為家", "安居樂業", "破釜沉舟", "目瞪口呆", "事半功倍", "假公濟私", "無辜受難", "刻苦耐勞", "三思而後行", "熟能生巧", "心平氣和"
+    ];
+
+    function generateRandomWord() {
+      // Get a random index from the words array
+      var randomIndex = Math.floor(Math.random() * words.length);
+
+      // Display the random word
+      var randomWordElement = document.getElementById("randomWord");
+      randomWordElement.textContent = words[randomIndex];
+    }
+  </script>
+</body>
+</html>
